@@ -27,7 +27,7 @@
 <style lang="scss">
 @import './scss/functions.scss';
 body {
-  background-color: $main-color;
+  background-color: $color-body;
 }
 
 .todo-wrapper {
