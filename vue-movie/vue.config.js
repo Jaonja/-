@@ -1,10 +1,11 @@
 module.exports = {
-    css: {
-      loaderOption: {
-        sass: {
-          prependData: '@import"@/assets/styles.scss";'
-        },
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `
+            @import "@/scss/variables.scss";
+          `,
       },
     },
-  };
-  
+  },
+};
