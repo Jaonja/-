@@ -67,7 +67,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 2px solid #000000;
+  border: 2px solid #905b3cf2;
   box-sizing: border-box;
   box-shadow: 0px 8px 35px 5px $main-color;
   h1 {
@@ -178,6 +178,7 @@ body {
     width: 32px;
     height: 32px;
     opacity: 0.3;
+    margin-left: 20px;
   }
   .close:hover {
     opacity: 1;
@@ -191,6 +192,7 @@ body {
     height: 33px;
     width: 2px;
     background-color: #333;
+    margin-left: -20px;
   }
   .close:before {
     transform: rotate(45deg);
@@ -205,6 +207,7 @@ body {
     width: 32px;
     height: 32px;
     opacity: 0.3;
+
   }
   .close1:hover {
     opacity: 1;
@@ -218,6 +221,7 @@ body {
     height: 33px;
     width: 2px;
     background-color: #333;
+     margin-left: -20px;
   }
   .close1:before {
     transform: rotate(45deg);
@@ -245,6 +249,7 @@ body {
     height: 33px;
     width: 2px;
     background-color: #333;
+     margin-left: -20px;
   }
   .close2:before {
     transform: rotate(45deg);
@@ -297,7 +302,6 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 28px;
   color: rgba(127, 75, 19, 0.42);
 }
 .radio .label {
@@ -375,7 +379,8 @@ input[type="radio"]:checked + .label:after {
     display: contents;
   }
   .checkbox-task{
-    max-width: 280px;
+    width: 290px;
+    margin-left: 13px;
   }
   .input-task{
     display: block;
@@ -386,9 +391,19 @@ input[type="radio"]:checked + .label:after {
     margin-bottom: 10px;
   }
   .radio{
-    margin: 0;
+  margin: 0;
    margin-bottom: 23px;
    font-size: 14px;
   }
+  .chekbox-wrapper .close:before, .chekbox-wrapper .close:after {
+    
+    margin: 0;
+}
+.chekbox-wrapper .close1:before, .chekbox-wrapper .close1:after {
+     margin: 0;
+}
+.chekbox-wrapper .close2:before, .chekbox-wrapper .close2:after {
+     margin: 0;
+}
 }
 </style>
