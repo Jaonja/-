@@ -28,20 +28,20 @@
           </div>
           <div class="footer-task">
             <p class="task-function">1/3 left</p>
-              <label for="opt1" class="radio">
-                <input type="radio" name="rdo" id="opt1" class="hidden" />
-                <span class="label"></span>All
-              </label>
+            <label for="opt1" class="radio">
+              <input type="radio" name="rdo" id="opt1" class="hidden" />
+              <span class="label"></span>All
+            </label>
 
-              <label for="opt2" class="radio">
-                <input type="radio" name="rdo" id="opt2" class="hidden" />
-                <span class="label"></span>Active
-              </label>
+            <label for="opt2" class="radio">
+              <input type="radio" name="rdo" id="opt2" class="hidden" />
+              <span class="label"></span>Active
+            </label>
 
-              <label for="opt3" class="radio">
-                <input type="radio" name="rdo" id="opt3" class="hidden" />
-                <span class="label"></span>Completed
-              </label>
+            <label for="opt3" class="radio">
+              <input type="radio" name="rdo" id="opt3" class="hidden" />
+              <span class="label"></span>Completed
+            </label>
           </div>
         </div>
       </div>
@@ -130,7 +130,8 @@ body {
     font-size: 16.66667px;
     text-align: center;
     line-height: 40px;
-    bottom: 4px;
+    bottom: 5px;
+    right: -2px;
   }
   .option-input:checked::after {
     -webkit-animation: click-wave 0.65s;
@@ -268,7 +269,6 @@ body {
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-   
   }
 }
 @keyframes click-wave {
@@ -294,12 +294,11 @@ body {
   font-size: 19px;
   margin: 15px;
   font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 28px;
-color: rgba(127, 75, 19, 0.42);
-
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(127, 75, 19, 0.42);
 }
 .radio .label {
   position: relative;
@@ -357,18 +356,39 @@ input[type="radio"]:checked + .label:after {
   transform: scale(0.95);
 }
 
- @media screen and (max-width: 690px) {
-        .todo-wrapper {
-        width: 320px;
-        }
-        .input-task{
-          max-width: 290px;
-        }
-        .footer-task{
-          margin: 0;
-        }
-        .task-function p{
-          display: none;
-        }
- }
+@media screen and (max-width: 690px) {
+  .todo-wrapper {
+    max-width: 320px;
+  }
+  .input-task {
+    max-width: 290px;
+  }
+  .footer-task {
+    margin: 0;
+    height: 80px;
+
+  }
+  .footer-task .task-function {
+    display: none;
+  }
+  .chekbox-wrapper{
+    display: contents;
+  }
+  .checkbox-task{
+    max-width: 280px;
+  }
+  .input-task{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .radio{
+    margin: 0;
+   margin-bottom: 23px;
+   font-size: 14px;
+  }
+}
 </style>
