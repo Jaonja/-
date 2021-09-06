@@ -109,4 +109,10 @@ input[type="radio"]:checked + .label {
     transform: scale(0.95);
   }
 }
+
+@media screen and (max-width: 690px) {
+  .radioButtons {
+    margin-top: 12px;
+  }
+}
 </style>
