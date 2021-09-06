@@ -50,6 +50,7 @@ body {
 @media screen and (max-width: 690px) {
   .todo-wrapper {
     max-width: 320px;
+    max-height: 404px;
   }
 }
 </style>

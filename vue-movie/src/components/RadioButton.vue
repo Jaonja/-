@@ -14,4 +14,12 @@ export default {
 <style lang="scss">
 @import "@/assets/styles.scss";
 
+@media screen and (max-width: 690px) {
+  label.radio {
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
 </style>

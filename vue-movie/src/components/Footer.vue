@@ -19,11 +19,10 @@ export default {
 
 .footer-task {
   display: flex;
-  flex-direction: row;
   background-color: $main-color;
   align-items: flex-end;
   justify-content: space-around;
-  margin-top: 14px;
+  margin-top: 22px;
   .task-function {
     display: flex;
     margin-left: 40px;
@@ -39,6 +38,9 @@ export default {
 @media screen and (max-width: 690px) {
   .footer-task .task-function {
     display: none;
+  }
+  .footer-task {
+    margin-top: 14px;
   }
 }
 </style>
