@@ -42,7 +42,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 2px solid #905b3cf2;
+  border: 2px solid $TdWrbord;
   box-sizing: border-box;
   box-shadow: 0px 8px 35px 5px $main-color;
 }

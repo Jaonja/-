@@ -36,28 +36,14 @@ export default {
     display: flex;
     margin-left: 40px;
     color: rgba(127, 75, 19, 0.42);
-    font-family: Open Sans;
+    font-family: $Open-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
   }
 }
-@keyframes click-wave {
-  0% {
-    height: 40px;
-    width: 40px;
-    opacity: 0.35;
-    position: relative;
-  }
-  100% {
-    height: 200px;
-    width: 200px;
-    margin-left: -80px;
-    margin-top: -80px;
-    opacity: 0;
-  }
-}
+
 
 .radio {
   position: relative;
@@ -65,7 +51,7 @@ export default {
   line-height: 20px;
   font-size: 19px;
   margin: 15px;
-  font-family: Open Sans;
+  font-family: $Open-Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -78,7 +64,7 @@ export default {
   margin-right: 10px;
   width: 20px;
   height: 20px;
-  border: 2px solid red;
+  border: 2px solid $radioColor;
   border-radius: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -90,7 +76,7 @@ export default {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: red;
+  background: $radioColor;
   transform: scale(0);
   transition: all 0.2s ease;
   opacity: 0.08;

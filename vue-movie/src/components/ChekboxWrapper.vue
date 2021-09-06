@@ -5,19 +5,19 @@
         <input type="checkbox" class="option-input checkbox" checked />
         Task 1
       </label>
-      <a href="#" class="close"></a>
+      <a class="close"></a>
     </div>
     <div class="checkbox-task">
       <label>
         <input type="checkbox" class="option-input checkbox" checked />
         Task 2 </label
-      ><a href="#" class="close1"></a>
+      ><a class="close1"></a>
     </div>
     <div class="checkbox-task">
       <label>
         <input type="checkbox" class="option-input checkbox" checked />
         Task 3 </label
-      ><a href="#" class="close2"></a>
+      ><a class="close2"></a>
     </div>
     <div><input type="text" placeholder="Add a new task" class="input-task" /></div>
   </div>
@@ -29,7 +29,6 @@
 @import "@/assets/styles.scss";
 
 .chekboxWrapper {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: 25px;
@@ -89,12 +88,12 @@
     font-size: 20px;
     font-size: 20px;
     line-height: 28px;
-    color: #7f4b13;
+    color: $headerh1;
     margin-left: 20px;
   }
 
   .checkbox-task {
-    background-color: #ffdfbe;
+    background-color: $chekTask;
     margin-top: 20px;
     border-radius: 10px;
     max-width: 480px;
@@ -106,7 +105,7 @@
     justify-content: center;
     text-align: center;
     background: #ffecd8;
-    border: 1.5px dashed #ffca93;
+    border: 1.5px dashed $main-color;
     box-sizing: border-box;
     border-radius: 10px;
     width: 480px;
