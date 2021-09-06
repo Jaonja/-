@@ -1,6 +1,6 @@
 <template>
   <div class="chekboxWrapper">
-    <ChekboxTask  v-for="ckeckBox in ckeckBoxs" :key="ckeckBox.id" :text1="ckeckBox.text1"/>
+    <ChekboxTask v-for="ckeckBox in ckeckBoxs" :key="ckeckBox" :textTask="ckeckBox.textTask" />
     <div>
       <input type="text" placeholder="Add a new task" class="input-task" />
     </div>
@@ -13,13 +13,9 @@ export default {
   components: {
     ChekboxTask,
   },
-   data() {
+  data() {
     return {
-      ckeckBoxs: [
-        { text1: "Task 1"},
-        { text1: "Task 2"},
-        { text1: "Task 3"},
-      ],
+      ckeckBoxs: [{ textTask: "Task 1" }, { textTask: "Task 2" }, { textTask: "Task 3" }],
     };
   },
 };

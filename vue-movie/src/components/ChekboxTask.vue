@@ -2,7 +2,7 @@
     <div class="checkboxTask">
       <label>
         <input type="checkbox" class="option-input checkbox" checked />
-         {{text1}}
+         {{textTask}}
       </label>
       <a class="close"></a>
     </div>
@@ -12,7 +12,7 @@
 <script>
 export default {
   props: {
-    text1: String,
+    textTask: String,
   },
 };
 </script>
