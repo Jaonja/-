@@ -18,33 +18,33 @@ export default {
 .radio {
   position: relative;
   cursor: pointer;
-  line-height: 20px;
-  font-size: 19px;
+  line-height: 1.25rem;
+  font-size: 1.1875rem;
   font-family: $Open-Sans;
-  margin: 15px;
+  margin: 0.9375rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(127, 75, 19, 0.42);
 
   .label {
     position: relative;
     display: block;
     float: left;
-    border: 2px solid $radioColor;
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+    border: 0.125rem solid $radioColor;
+    margin-right: 0.625rem;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 100%;
     -webkit-tap-highlight-color: transparent;
 
     &:after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 5px;
-      width: 10px;
-      height: 10px;
+      top: 0.3125rem;
+      left: 0.3125rem;
+      width: 0.625rem;
+      height: 0.625rem;
       border-radius: 100%;
       background: $radioColor;
       transform: scale(0);
@@ -75,15 +75,15 @@ input[type="radio"]:checked + .label {
 
 .credit {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 1.25rem;
+  bottom: 1.25rem;
   transition: all 0.2s ease;
   -webkit-user-select: none;
   user-select: none;
   opacity: 0.6;
 
   img {
-    width: 72px;
+    width: 4.5rem;
   }
 
   &:hover {
@@ -92,7 +92,7 @@ input[type="radio"]:checked + .label {
 }
 @media screen and (max-width: 690px) {
   label.radio {
-    font-size: 14px;
+    font-size: 0.875rem;
     justify-content: center;
     align-items: center;
     display: flex;

@@ -22,16 +22,16 @@ export default {
   background-color: $main-color;
   align-items: flex-end;
   justify-content: space-around;
-  margin-top: 22px;
+  margin-top: 1.375rem;
   .task-function {
     display: flex;
-    margin-left: 40px;
+    margin-left: 2.5rem;
     font-family: $Open-Sans;
     font-style: normal;
     font-weight: 600;
     color: $footerText;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -40,7 +40,7 @@ export default {
     display: none;
   }
   .footer-task {
-    margin-top: 14px;
+    margin-top: 0.875rem;
   }
 }
 </style>

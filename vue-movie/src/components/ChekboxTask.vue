@@ -26,13 +26,13 @@ export default {
   .option-input {
     appearance: none;
     position: relative;
-    top: 13.33333px;
+    top: 0.8125rem;
     right: 0;
     bottom: 0;
     left: 0;
-    height: 25px;
+    height: 1.5625rem;
     border-radius: 20%;
-    width: 25px;
+    width: 1.5625rem;
     transition: all 0.15s ease-out 0s;
     background: #ffdfbe;
     border: none;
@@ -49,16 +49,16 @@ export default {
       background: #feb567;
 
       &::before {
-        height: 25px;
-        width: 25px;
+        height: 1.5625rem;
+        width: 1.5625rem;
         position: absolute;
         content: "✔";
         display: inline-block;
-        font-size: 16.66667px;
+        font-size: 1rem;
         text-align: center;
         line-height: 40px;
-        bottom: 5px;
-        right: -2px;
+        bottom: 0.3125rem;
+        right: -0.125rem;
       }
 
       &::after {
@@ -75,42 +75,41 @@ export default {
   }
 
   label {
-    font-size: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $headerh1;
-    line-height: 28px;
-    margin-left: 20px;
+    line-height: 1.75rem;
+    margin-left: 1.25rem;
   }
 
   .checkboxTask {
-    margin-top: 20px;
-    border-radius: 10px;
+    margin-top: 1.25rem;
+    border-radius: 0.625rem;
     background-color: $chekTask;
-    max-width: 480px;
-    min-height: 50px;
+    max-width: 30rem;
+    min-height: 3.125rem;
     display: flex;
   }
 
   .input-task {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     justify-content: center;
     text-align: center;
     background: #ffecd8;
     box-sizing: border-box;
-    border: 1.5px dashed $main-color;
-    border-radius: 10px;
-    width: 480px;
-    height: 50px;
+    border: 0.0625rem dashed $main-color;
+    border-radius: 0.625rem;
+    width: 30rem;
+    height: 3.125rem;
   }
 
   .close {
     position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0.3;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 
     &:hover {
       opacity: 1;
@@ -119,13 +118,13 @@ export default {
     &:before,
     &:after {
       position: absolute;
-      left: 10px;
-      top: 50px;
+      left: 0.625rem;
+      top: 3.125rem;
       content: " ";
-      height: 33px;
-      width: 2px;
+      height: 2.0625rem;
+      width: 0.125rem;
       background-color: #333;
-      margin-left: -20px;
+      margin-left: -1.25rem;
     }
 
     &:before {
@@ -139,10 +138,10 @@ export default {
 
   .close1 {
     position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0.3;
 
     &:hover {
@@ -152,13 +151,13 @@ export default {
     &:before,
     &:after {
       position: absolute;
-      left: 10px;
-      top: 120px;
+      left: 0.625rem;
+      top: 7.5rem;
       content: " ";
-      height: 33px;
-      width: 2px;
+      height: 2.0625rem;
+      width: 0.125rem;
       background-color: #333;
-      margin-left: -20px;
+      margin-left: -1.25rem;
     }
 
     &:before {
@@ -172,10 +171,10 @@ export default {
 
   .close2 {
     position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0.3;
 
     &:hover {
@@ -185,13 +184,13 @@ export default {
     &:before,
     &:after {
       position: absolute;
-      left: 10px;
-      top: 185px;
+      left: 0.625rem;
+      top: 11.5625rem;
       content: " ";
-      height: 33px;
-      width: 2px;
+      height: 2.0625rem;
+      width: 0.125rem;
       background-color: #333;
-      margin-left: -20px;
+      margin-left: -1.25rem;
     }
 
     &:before {
@@ -204,23 +203,23 @@ export default {
   }
   @media screen and (max-width: 690px) {
   .input-task {
-    max-width: 290px;
+    max-width: 18.125rem;
   }
   .chekboxWrapper {
     display: contents;
     margin-left: 0;
   }
   .checkboxTask {
-    width: 290px;
-    margin-left: 13px;
+    width: 18.125rem;
+    margin-left: 0.8125rem;
   }
   .input-task {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-left: 11px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 0.6875rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 
   .chekboxWrapper .close:before,

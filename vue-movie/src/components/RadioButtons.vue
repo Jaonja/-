@@ -14,7 +14,7 @@ export default {
     return {
       buttons: [
         { text: "all", id: 1, isChecked: true, },
-        { text: "complited", id: 2, isChecked: false, },
+        { text: "complited", id: 2, isChecked: true, },
         { text: "active", id: 3, isChecked: false, },
       ],
     };
@@ -31,13 +31,13 @@ export default {
   align-items: flex-end;
   background-color: $main-color;
   justify-content: space-around;
-  margin-top: 2px;
+  margin-top: 0.125rem;
 }
 
 
 @media screen and (max-width: 690px) {
   .radioButtons {
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
 }
 </style>

@@ -13,14 +13,14 @@
   background-color: $main-color;
   margin: 0;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  height: 50px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  height: 3.125rem;
   color: $headerh1;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 28px;
+  font-size: 1.875rem;
+  line-height: 1.75rem;
 }
 </style>

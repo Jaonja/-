@@ -26,30 +26,30 @@ export default {
 .chekboxWrapper {
   justify-content: center;
   flex-direction: column;
-  margin-left: 25px;
+  margin-left: 1.5625rem;
   input[type="text"] {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
   }
   @media screen and (max-width: 690px) {
     .input-task {
-      max-width: 290px;
+      max-width: 18.125rem;
     }
     .chekboxWrapper {
       display: contents;
       margin-left: 0;
     }
     .checkbox-task {
-      width: 290px;
-      margin-left: 13px;
+      width: 18.125rem;
+      margin-left: 0.8125rem;
     }
     .input-task {
       display: block;
       justify-content: center;
       align-items: center;
-      margin-left: 11px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-left: 0.6875rem;
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem;
     }
 
     .chekbox-wrapper .close:before,

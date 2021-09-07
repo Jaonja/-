@@ -33,8 +33,8 @@ body {
 }
 
 .todo-wrapper {
-  width: 540px;
-  height: 424px;
+  width: 33.75rem;
+  height: 26.5rem;
   background: #fff4e9;
   position: relative;
   -webkit-transform: translate(-50%, -50%);
@@ -44,13 +44,13 @@ body {
   left: 50%;
   border: 2px solid $TdWrbord;
   box-sizing: border-box;
-  box-shadow: 0px 8px 35px 5px $main-color;
+  box-shadow: 0px 0.5rem 2.1875rem 0.3125rem $main-color;
 }
 
 @media screen and (max-width: 690px) {
   .todo-wrapper {
-    max-width: 320px;
-    max-height: 404px;
+    max-width: 20rem;
+    max-height: 25.25rem;
   }
 }
 </style>
