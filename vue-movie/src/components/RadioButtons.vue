@@ -13,8 +13,8 @@ export default {
   data() {
     return {
       buttons: [
-        { text: "all", id: 1, isChecked: true },
-        { text: "complited", id: 2, isChecked: true },
+        { text: "all", id: 1, isChecked: false },
+        { text: "complited", id: 2, isChecked: false },
         { text: "active", id: 3, isChecked: false },
       ],
     };
