@@ -18,7 +18,7 @@ export default {
       ckeckBoxs: [
         { textTask: "Task 1", id: 1, isChecked: true },
         { textTask: "Task 2", id: 2, isChecked: false },
-        { textTask: "Task 3", id: 3, isChecked:false },
+        { textTask: "Task 3", id: 3, isChecked: false },
       ],
     };
   },

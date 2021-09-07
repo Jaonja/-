@@ -1,6 +1,6 @@
 <template>
   <label for="opt1" class="radio">
-    <input type="radio" name="rdo" id="opt1" class="hidden" :checked = "isChecked" />
+    <input type="radio" name="rdo" id="opt1" class="hidden" :checked="isChecked" />
     <span class="label"></span>{{ text }}
   </label>
 </template>

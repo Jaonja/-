@@ -1,6 +1,6 @@
 <template>
   <div class="radioButtons">
-    <RadioButton v-for="button in buttons" :key="button.id"  :text="button.text" :isChecked="button.isChecked"/>
+    <RadioButton v-for="button in buttons" :key="button.id" :text="button.text" :isChecked="button.isChecked" />
   </div>
 </template>
 
@@ -13,9 +13,9 @@ export default {
   data() {
     return {
       buttons: [
-        { text: "all", id: 1, isChecked: true, },
-        { text: "complited", id: 2, isChecked: true, },
-        { text: "active", id: 3, isChecked: false, },
+        { text: "all", id: 1, isChecked: true },
+        { text: "complited", id: 2, isChecked: true },
+        { text: "active", id: 3, isChecked: false },
       ],
     };
   },
@@ -33,7 +33,6 @@ export default {
   justify-content: space-around;
   margin-top: 0.125rem;
 }
-
 
 @media screen and (max-width: 690px) {
   .radioButtons {
