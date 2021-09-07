@@ -34,11 +34,11 @@ export default {
     border-radius: 20%;
     width: 1.5625rem;
     transition: all 0.15s ease-out 0s;
-    background: #ffdfbe;
+    background: $OptionInputBack;
     border: none;
-    color: #fff;
+    color: $OptionInputColor;
     cursor: pointer;
-    border: 1.5px solid #feb567;
+    border: 1.5px solid $OptionInpCheck;
     display: inline-block;
     margin-right: 0.5rem;
     outline: none;
@@ -46,7 +46,7 @@ export default {
     z-index: 1000;
 
     &:checked {
-      background: #feb567;
+      background: $OptionInpCheck;
 
       &::before {
         height: 1.5625rem;
@@ -65,7 +65,7 @@ export default {
         -webkit-animation: click-wave 0.65s;
         -moz-animation: click-wave 0.65s;
         animation: click-wave 0.65s;
-        background: #40e0d0;
+        background: $OptionInpAft;
         content: "";
         display: block;
         position: relative;
@@ -94,7 +94,7 @@ export default {
     margin-top: 1.25rem;
     justify-content: center;
     text-align: center;
-    background: #ffecd8;
+    background: $inputTask;
     box-sizing: border-box;
     border: 0.0625rem dashed $main-color;
     border-radius: 0.625rem;
@@ -123,7 +123,7 @@ export default {
       content: " ";
       height: 2.0625rem;
       width: 0.125rem;
-      background-color: #333;
+      background-color: $checkBoxAftBack;
       margin-left: -1.25rem;
     }
 
@@ -156,7 +156,7 @@ export default {
       content: " ";
       height: 2.0625rem;
       width: 0.125rem;
-      background-color: #333;
+      background-color: $checkBoxAftBack;
       margin-left: -1.25rem;
     }
 
@@ -189,7 +189,7 @@ export default {
       content: " ";
       height: 2.0625rem;
       width: 0.125rem;
-      background-color: #333;
+      background-color: $checkBoxAftBack;
       margin-left: -1.25rem;
     }
 

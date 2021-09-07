@@ -60,7 +60,7 @@ export default {
 }
 
 input[type="radio"]:checked + .label {
-  border-color: green;
+  border-color: $inputRadio;
 
   &:after {
     transform: scale(1);
