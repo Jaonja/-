@@ -1,7 +1,7 @@
 <template>
     <div class="checkboxTask">
       <label>
-        <input type="checkbox" class="option-input checkbox" checked />
+        <input type="checkbox" class="option-input checkbox" :checked = "isChecked" />
          {{textTask}}
       </label>
       <a class="close"></a>
@@ -15,6 +15,7 @@
 export default {
   props: {
     textTask: String,
+    isChecked: Boolean,
   },
 };
 </script>
