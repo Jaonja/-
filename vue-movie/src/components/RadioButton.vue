@@ -1,6 +1,6 @@
 <template>
   <label for="opt1" class="radio">
-    <input type="radio" name="rdo" id="opt1" class="hidden" />
+    <input type="radio" name="rdo" id="opt1" class="hidden" :checked = "isChecked" />
     <span class="label"></span>{{ text }}
   </label>
 </template>
@@ -8,13 +8,12 @@
 export default {
   props: {
     text: String,
+    isChecked: Boolean,
   },
 };
 </script>
 <style lang="scss">
 @import "@/assets/styles.scss";
-
-
 
 .radio {
   position: relative;
