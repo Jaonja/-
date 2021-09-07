@@ -5,6 +5,8 @@
          {{textTask}}
       </label>
       <a class="close"></a>
+      <a class="close1"></a>
+      <a class="close2"></a>
     </div>
 </template>
 
