@@ -18,8 +18,5 @@
   color: $headerh1;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 1.875rem;
-  line-height: 1.75rem;
 }
 </style>

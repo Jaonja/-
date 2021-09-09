@@ -26,8 +26,6 @@ export default {
   appearance: none;
   position: relative;
   top: 0.8125rem;
-  right: 0;
-  bottom: 0;
   left: 0;
   height: 1.5625rem;
   border-radius: 20%;
@@ -37,7 +35,7 @@ export default {
   border: none;
   color: $OptionInputColor;
   cursor: pointer;
-  border: 1.5px solid $OptionInpCheck;
+  border: 0.0625rem solid $OptionInpCheck;
   display: inline-block;
   margin-right: 0.5rem;
   outline: none;
@@ -55,7 +53,7 @@ export default {
       display: inline-block;
       font-size: 1rem;
       text-align: center;
-      line-height: 40px;
+      line-height: 2.5rem;
       bottom: 0.3125rem;
       right: -0.125rem;
     }

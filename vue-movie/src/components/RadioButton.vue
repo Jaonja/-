@@ -24,7 +24,6 @@ export default {
   margin: 0.9375rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.25rem;
   color: rgba(127, 75, 19, 0.42);
 
   .label {
