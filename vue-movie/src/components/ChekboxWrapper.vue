@@ -1,6 +1,11 @@
 <template>
   <div class="chekboxWrapper">
-    <ChekboxTask v-for="ckeckBox in ckeckBoxs" :key="ckeckBox.id" :textTask="ckeckBox.textTask" :isChecked="ckeckBox.isChecked" />
+    <ChekboxTask
+      v-for="ckeckBox in ckeckBoxs"
+      :key="ckeckBox.id"
+      :textTask="ckeckBox.textTask"
+      :isChecked="ckeckBox.isChecked"
+    />
     <div>
       <input type="text" placeholder="Add a new task" class="input-task" />
     </div>
@@ -16,9 +21,9 @@ export default {
   data() {
     return {
       ckeckBoxs: [
-        { textTask: "Task 1", id: 1, isChecked: false, },
-        { textTask: "Task 2", id: 2, isChecked: false,},
-        { textTask: "Task 3", id: 3, isChecked: false, },
+        { textTask: "Task 1", id: 1, isChecked: false },
+        { textTask: "Task 2", id: 2, isChecked: false },
+        { textTask: "Task 3", id: 3, isChecked: false },
       ],
     };
   },
