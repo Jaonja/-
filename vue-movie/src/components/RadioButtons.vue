@@ -1,6 +1,6 @@
 <template>
   <div class="radioButtons">
-    <RadioButton v-for="button in buttons" :key="button.id" :text="button.text" :isChecked="button.isChecked" />
+
   </div>
 </template>
 
