@@ -1,6 +1,6 @@
 <template>
-  <div class="footer-task">
-    <p class="task-function">1/3 left</p>
+  <div :class="$style.footerTodo">
+    <p :class="$style.taskTodo">1/3 left</p>
     <RadioButtons />
   </div>
 </template>
@@ -14,16 +14,16 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 @import "@/assets/styles.scss";
 
-.footer-task {
+.footerTodo {
   display: flex;
   background-color: $main-color;
   align-items: flex-end;
   justify-content: space-around;
   margin-top: 1.375rem;
-  .task-function {
+  .taskTodo {
     display: flex;
     margin-left: 2.5rem;
     font-family: $Open-Sans;
@@ -36,10 +36,10 @@ export default {
 }
 
 @media screen and (max-width: 690px) {
-  .footer-task .task-function {
+  .footerTodo .taskTodo {
     display: none;
   }
-  .footer-task {
+  .footerTodo {
     margin-top: 0.875rem;
   }
 }

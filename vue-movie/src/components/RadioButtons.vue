@@ -1,5 +1,5 @@
 <template>
-  <div class="radioButtons">
+  <div :class="$style.radioButtons">
     <RadioButton
       v-for="button in buttons"
       :key="button.id"
@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 @import "@/assets/styles.scss";
 
 .radioButtons {

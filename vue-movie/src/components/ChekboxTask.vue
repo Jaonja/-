@@ -1,12 +1,16 @@
 <template>
-  <div class="checkboxTask">
+  <div :class="$style.checkboxTask">
     <label>
-      <input type="checkbox" class="option-input checkbox" :checked="isChecked" />
+      <input
+        type="checkbox"
+        :class="$style.optionCheckbox"
+        :checked="isChecked"
+      />
       {{ textTask }}
     </label>
-    <a class="close"></a>
-    <a class="close1"></a>
-    <a class="close2"></a>
+    <a :class="$style.close"></a>
+    <a :class="$style.close1"></a>
+    <a :class="$style.close2"></a>
   </div>
 </template>
 
@@ -19,10 +23,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 @import "@/assets/styles.scss";
 
-.option-input {
+.optionCheckbox {
   appearance: none;
   position: relative;
   top: 0.8125rem;
@@ -85,18 +89,6 @@ label {
   max-width: 30rem;
   min-height: 3.125rem;
   display: flex;
-}
-
-.input-task {
-  margin-top: 1.25rem;
-  justify-content: center;
-  text-align: center;
-  background: $inputTask;
-  box-sizing: border-box;
-  border: 0.0625rem dashed $main-color;
-  border-radius: 0.625rem;
-  width: 30rem;
-  height: 3.125rem;
 }
 
 .close {
@@ -199,24 +191,9 @@ label {
   }
 }
 @media screen and (max-width: 690px) {
-  .input-task {
-    max-width: 18.125rem;
-  }
-  .chekboxWrapper {
-    display: contents;
-    margin-left: 0;
-  }
   .checkboxTask {
     width: 18.125rem;
     margin-left: 0.8125rem;
-  }
-  .input-task {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.6875rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
   }
 
   .chekboxWrapper .close:before,

@@ -1,7 +1,13 @@
 <template>
-  <label for="opt1" class="radio">
-    <input type="radio" name="rdo" id="opt1" class="hidden" :checked="isChecked" />
-    <span class="label"></span>{{ text }}
+  <label for="opt1" :class="$style.radio">
+    <input
+      type="radio"
+      name="rdo"
+      id="opt1"
+      :class="$style.hidden"
+      :checked="isChecked"
+    />
+    <span :class="$style.label"></span>{{ text }}
   </label>
 </template>
 <script>
@@ -12,7 +18,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" module>
 @import "@/assets/styles.scss";
 
 .radio {
