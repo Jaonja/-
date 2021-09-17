@@ -44,10 +44,7 @@ export default new Vuex.Store({
   },
   getters: {
     ckeckBoxs(state) {
-      return state.todos.length;
-    },
-    doneTodos: (state) => {
-      return state.todos.filter((todo) => todo.todos).length;
+      return state.todos;
     },
   },
 });
