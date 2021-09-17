@@ -14,18 +14,15 @@
 
 <script>
 import ChekboxTask from "@/components/ChekboxTask.vue";
+
+import { mapGetters } from "vuex";
+
 export default {
+  computed: {
+    ...mapGetters(["ckeckBoxs"]),
+  },
   components: {
     ChekboxTask,
-  },
-  data() {
-    return {
-      ckeckBoxs: [
-        { textTask: "Task 1", id: 1, isChecked: false },
-        { textTask: "Task 2", id: 2, isChecked: false },
-        { textTask: "Task 3", id: 3, isChecked: false },
-      ],
-    };
   },
 };
 </script>

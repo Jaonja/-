@@ -6,16 +6,16 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   actions: {},
   mutations: {},
-	state: {
-		checkData: [
+  state: {
+    todos: [
       {
         id: 1,
         textTask: "Task 1",
-        isChecked: false,
+        isChecked: true,
       },
       {
         id: 2,
-				textTask: "Task 2",
+        textTask: "Task 2",
         isChecked: false,
       },
       {
@@ -41,12 +41,13 @@ export default new Vuex.Store({
         isChecked: false,
       },
     ],
-	},
-	getters: {},
-
-	modules: {
-
-	}
-
-
+  },
+  getters: {
+    ckeckBoxs(state) {
+      return state.todos.length;
+    },
+    doneTodos: (state) => {
+      return state.todos.filter((todo) => todo.todos).length;
+    },
+  },
 });
