@@ -5,9 +5,15 @@
       :key="ckeckBox.id"
       :textTask="ckeckBox.textTask"
       :isChecked="ckeckBox.isChecked"
+      :id="ckeckBox.id"
     />
     <div>
-      <input type="text" placeholder="Add a new task" :class="$style.input" :v-model="ckeckBoxs.textTask">
+      <input
+        type="text"
+        placeholder="Add a new task"
+        :class="$style.input"
+        :v-model="ckeckBoxs.textTask"
+      />
     </div>
   </div>
 </template>

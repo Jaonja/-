@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.footerTodo">
-    <p :class="$style.taskTodo">{{ todosCompleted }}{{ todosLength }} left</p>
+    <p :class="$style.taskTodo">{{ todosCompleted }}/{{ todosLength }} left</p>
     <RadioButtons />
   </div>
 </template>
@@ -10,7 +10,7 @@ import RadioButtons from "@/components/RadioButtons.vue";
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["todosLength", "todosCompleted"]),
+    ...mapGetters(["todosCompleted", "todosLength"]),
   },
   components: {
     RadioButtons,

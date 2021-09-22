@@ -27,12 +27,12 @@ export default new Vuex.Store({
       {
         id: 1,
         text: "All",
-        isChecked: false,
+        isChecked: true,
       },
       {
         id: 2,
         text: "Active",
-        isChecked: true,
+        isChecked: false,
       },
       {
         id: 3,
@@ -40,20 +40,28 @@ export default new Vuex.Store({
         isChecked: false,
       },
     ],
+    type: "All",
   },
   getters: {
     buttons(state) {
       return state.radioData;
     },
-
-    ckeckBoxs(state) {
-      return state.todosData;
-    },
     todosLength(state) {
       return state.radioData.length;
     },
-    completedTaskCount(state) {
+    todosCompleted(state) {
       return state.todosData.filter((todo) => todo.isChecked).length;
+    },
+
+    ckeckBoxs(state) {
+      switch (state.type) {
+        case "Active":
+          return state.todosData.filter((todo) => !todo.isChecked);
+        case "Complete":
+          return state.todosData.filter((todo) => todo.isChecked);
+        default:
+          return state.todosData;
+      }
     },
   },
   mutations: {},
