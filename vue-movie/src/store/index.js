@@ -5,9 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   actions: {},
-  mutations: {},
   state: {
-    todos: [
+    todosData: [
       {
         id: 1,
         textTask: "Task 1",
@@ -28,12 +27,12 @@ export default new Vuex.Store({
       {
         id: 1,
         text: "All",
-        isChecked: true,
+        isChecked: false,
       },
       {
         id: 2,
         text: "Active",
-        isChecked: false,
+        isChecked: true,
       },
       {
         id: 3,
@@ -43,8 +42,19 @@ export default new Vuex.Store({
     ],
   },
   getters: {
+    buttons(state) {
+      return state.radioData;
+    },
+
     ckeckBoxs(state) {
-      return state.todos;
+      return state.todosData;
+    },
+    todosLength(state) {
+      return state.radioData.length;
+    },
+    completedTaskCount(state) {
+      return state.todosData.filter((todo) => todo.isChecked).length;
     },
   },
+  mutations: {},
 });

@@ -20,6 +20,7 @@ export default {
   props: {
     textTask: String,
     isChecked: Boolean,
+    id: Number,
   },
 };
 </script>

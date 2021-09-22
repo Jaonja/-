@@ -15,6 +15,7 @@ export default {
   props: {
     text: String,
     isChecked: Boolean,
+		id:Number,
   },
 };
 </script>

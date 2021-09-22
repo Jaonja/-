@@ -7,7 +7,7 @@
       :isChecked="ckeckBox.isChecked"
     />
     <div>
-      <input type="text" placeholder="Add a new task" :class="$style.input" />
+      <input type="text" placeholder="Add a new task" :class="$style.input" :v-model="ckeckBoxs.textTask">
     </div>
   </div>
 </template>
