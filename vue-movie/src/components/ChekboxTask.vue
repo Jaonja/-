@@ -5,6 +5,7 @@
         type="checkbox"
         :class="$style.optionCheckbox"
         :checked="isChecked"
+        :id="isChecked.id"
       />
       {{ textTask }}
     </label>
@@ -24,7 +25,7 @@ export default {
     id: Number,
   },
   methods: {
-    ...mapMutations(["delTask"]),
+    ...mapMutations(["delTask", "addTask"]),
 
     del() {
       this.delTask(this.id);

@@ -34,7 +34,6 @@ body {
 
 .todo-wrapper {
   width: 33.75rem;
-  height: 26.5rem;
   background: $TdwrapCol;
   position: relative;
   -webkit-transform: translate(-50%, -50%);

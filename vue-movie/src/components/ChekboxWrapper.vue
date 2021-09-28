@@ -12,7 +12,8 @@
         type="text"
         placeholder="Add a new task"
         :class="$style.input"
-        :v-model="ckeckBoxs.textTask"
+        v-model="newTsk"
+        v-on:keyup.enter="add"
       />
     </div>
   </div>
@@ -20,7 +21,7 @@
 
 <script>
 import ChekboxTask from "@/components/ChekboxTask.vue";
-
+import { mapMutations } from "vuex";
 import { mapGetters } from "vuex";
 
 export default {
@@ -29,6 +30,14 @@ export default {
   },
   components: {
     ChekboxTask,
+  },
+  methods: {
+    ...mapMutations(["addTsk"]),
+
+    add() {
+      this.addTsk(this.newTsk);
+      this.newTsk = "";
+    },
   },
 };
 </script>

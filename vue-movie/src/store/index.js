@@ -9,17 +9,17 @@ export default new Vuex.Store({
     todosData: [
       {
         id: 1,
-        textTask: "Task 1",
+        textTask: "Задача номер 1",
         isChecked: true,
       },
       {
         id: 2,
-        textTask: "Task 2",
+        textTask: "Задача номер 2",
         isChecked: false,
       },
       {
         id: 3,
-        textTask: "Task 3",
+        textTask: "Задача номер 3",
         isChecked: false,
       },
     ],
@@ -66,10 +66,23 @@ export default new Vuex.Store({
   },
   mutations: {
     delTask(state, id) {
-			state.todosData.splice(id - 1);
-			if (state.todosData.length === 0) {
-				alert('Вы выполнили все задачи')
-			}
+      state.todosData.splice(id - 1);
+      id.forEach((i) => {
+        state.todosData = i + 1;
+      });
+      if (state.todosData.length === 0) {
+        alert("Поздравляем вы выполнили все задачки");
+      }
+    },
+    addTsk(state, textTask) {
+      state.todosData.push({
+        id: state.todosData.length,
+        isChecked: false,
+        textTask: textTask,
+      });
+      if ((state.todosData.length = state.todosData.length)) {
+        alert("вы добляете " + state.todosData.length + " задачу");
+      }
     },
   },
 });
