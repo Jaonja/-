@@ -67,9 +67,6 @@ export default new Vuex.Store({
   mutations: {
     delTask(state, id) {
       state.todosData.splice(id - 1);
-      id.forEach((i) => {
-        state.todosData = i + 1;
-      });
       if (state.todosData.length === 0) {
         alert("Поздравляем вы выполнили все задачки");
       }
