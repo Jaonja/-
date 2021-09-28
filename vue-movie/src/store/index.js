@@ -67,8 +67,8 @@ export default new Vuex.Store({
   mutations: {
     delTask(state, id) {
       state.todosData = state.todosData.filter((task) => task.id != id);
-      if (state.todosData.length === 0) {
-        alert("Поздравляем вы выполнили все задачки");
+      if (state.todosData.length === state.todosData.length) {
+        alert("Задача удалена");
       }
     },
     addTsk(state, textTask) {
