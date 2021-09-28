@@ -10,7 +10,7 @@ export default new Vuex.Store({
       {
         id: 1,
         textTask: "Задача номер 1",
-        isChecked: true,
+        isChecked: false,
       },
       {
         id: 2,
@@ -37,7 +37,7 @@ export default new Vuex.Store({
       {
         id: 3,
         text: "Complete",
-        isChecked: false,
+        isChecked: true,
       },
     ],
     type: "All",
@@ -66,7 +66,7 @@ export default new Vuex.Store({
   },
   mutations: {
     delTask(state, id) {
-      state.todosData.splice(id - 1);
+      state.todosData = state.todosData.filter((task) => task.id != id);
       if (state.todosData.length === 0) {
         alert("Поздравляем вы выполнили все задачки");
       }
@@ -80,6 +80,17 @@ export default new Vuex.Store({
       if ((state.todosData.length = state.todosData.length)) {
         alert("вы добляете " + state.todosData.length + " задачу");
       }
+    },
+    CheckBoxNext(state, id) {
+      state.todosData = state.todosData.map((i) =>
+        i.id === id ? { ...i, isChecked: !i.isChecked } : i
+      );
+    },
+    changeBtn(state, text) {
+      state.type = text;
+      state.radioData.map((i) =>
+        i.text === text ? { ...i, isChecked: !i.isChecked } : i
+      );
     },
   },
 });

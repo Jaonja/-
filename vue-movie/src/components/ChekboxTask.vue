@@ -5,6 +5,7 @@
         type="checkbox"
         :class="$style.optionCheckbox"
         :checked="isChecked"
+        @click="next"
         :id="isChecked.id"
       />
       {{ textTask }}
@@ -25,10 +26,13 @@ export default {
     id: Number,
   },
   methods: {
-    ...mapMutations(["delTask", "addTask"]),
+    ...mapMutations(["delTask", "addTask", "CheckBoxNext"]),
 
     del() {
       this.delTask(this.id);
+    },
+    next() {
+      this.CheckBoxNext(this.id);
     },
   },
 };
