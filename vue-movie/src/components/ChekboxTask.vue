@@ -8,19 +8,27 @@
       />
       {{ textTask }}
     </label>
-    <a :class="$style.close"></a>
-    <a :class="$style.close1"></a>
-    <a :class="$style.close2"></a>
+    <a :class="$style.close" @click="del"></a>
+    <a :class="$style.close1" @click="del"></a>
+    <a :class="$style.close2" @click="del"></a>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapMutations } from "vuex";
+
 export default {
   props: {
     textTask: String,
     isChecked: Boolean,
     id: Number,
+  },
+  methods: {
+    ...mapMutations(["delTask"]),
+
+    del() {
+      this.delTask(this.id);
+    },
   },
 };
 </script>

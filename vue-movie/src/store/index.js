@@ -27,7 +27,7 @@ export default new Vuex.Store({
       {
         id: 1,
         text: "All",
-        isChecked: true,
+        isChecked: false,
       },
       {
         id: 2,
@@ -64,5 +64,12 @@ export default new Vuex.Store({
       }
     },
   },
-  mutations: {},
+  mutations: {
+    delTask(state, id) {
+			state.todosData.splice(id - 1);
+			if (state.todosData.length === 0) {
+				alert('Вы выполнили все задачи')
+			}
+    },
+  },
 });
