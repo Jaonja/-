@@ -47,7 +47,7 @@ export default new Vuex.Store({
       return state.radioData;
     },
     todosLength(state) {
-      return state.radioData.length;
+      return state.todosData.length;
     },
     todosCompleted(state) {
       return state.todosData.filter((todo) => todo.isChecked).length;
