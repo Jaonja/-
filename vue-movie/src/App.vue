@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import ChekboxWrapper from "@/components/ChekboxWrapper.vue";
+import Header from "@/components/organisms/Header.vue";
+import Footer from "@/components/organisms/Footer.vue";
+import ChekboxWrapper from "@/components/organisms/ChekboxWrapper.vue";
 export default {
   components: {
     Header,

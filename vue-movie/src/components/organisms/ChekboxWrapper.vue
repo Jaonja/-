@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.checkboxWrapper">
     <ChekboxTask
-      v-for="ckeckBox in ckeckBoxs"
+      v-for="ckeckBox in taskState"
       :key="ckeckBox.id"
       :textTask="ckeckBox.textTask"
       :isChecked="ckeckBox.isChecked"
@@ -20,13 +20,12 @@
 </template>
 
 <script>
-import ChekboxTask from "@/components/ChekboxTask.vue";
-import { mapMutations } from "vuex";
-import { mapGetters } from "vuex";
+import ChekboxTask from "@/components/atoms/ChekboxTask.vue";
+import { mapMutations, mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters(["ckeckBoxs"]),
+    ...mapGetters(["taskState"]),
   },
   components: {
     ChekboxTask,

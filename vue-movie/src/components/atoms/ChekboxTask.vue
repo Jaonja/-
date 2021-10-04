@@ -6,13 +6,10 @@
         :class="$style.optionCheckbox"
         :checked="isChecked"
         @click="next"
-        :id="isChecked.id"
       />
       {{ textTask }}
+      <div :class="$style.close" @click="del"></div>
     </label>
-    <a :class="$style.close" @click="del"></a>
-    <a :class="$style.close1" @click="del"></a>
-    <a :class="$style.close2" @click="del"></a>
   </div>
 </template>
 
@@ -23,7 +20,7 @@ export default {
   props: {
     textTask: String,
     isChecked: Boolean,
-    id: Number,
+    id: String,
   },
   methods: {
     ...mapMutations(["delTask", "addTask", "CheckBoxNext"]),
@@ -107,121 +104,46 @@ label {
 }
 
 .close {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  width: 2rem;
-  height: 2rem;
-  opacity: 0.3;
-  margin-left: 1.25rem;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:before,
+  height: 24px;
+  width: 24px;
+  background-color: #ffdfbe;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 390px;
+  margin-top: -25px;
+  border: 1px solid $inputRadio;
+  display: flex;
+  justify-content: center;
   &:after {
     position: absolute;
-    left: 0.625rem;
-    top: 3.125rem;
-    content: " ";
-    height: 2.0625rem;
-    width: 0.125rem;
-    background-color: $checkBoxAftBack;
-    margin-left: -1.25rem;
+    top: -38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\d7";
+    font-size: 40px;
+    color: $footerText;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
   }
-
-  &:before {
-    transform: rotate(45deg);
+  &:hover {
+    border-color: $radioColor;
   }
-
-  &:after {
-    transform: rotate(-45deg);
+  &:hover:after {
+    color: $radioColor;
   }
 }
 
-.close1 {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  width: 2rem;
-  height: 2rem;
-  opacity: 0.3;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:before,
-  &:after {
-    position: absolute;
-    left: 0.625rem;
-    top: 7.5rem;
-    content: " ";
-    height: 2.0625rem;
-    width: 0.125rem;
-    background-color: $checkBoxAftBack;
-    margin-left: -1.25rem;
-  }
-
-  &:before {
-    transform: rotate(45deg);
-  }
-
-  &:after {
-    transform: rotate(-45deg);
-  }
-}
-
-.close2 {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  width: 2rem;
-  height: 2rem;
-  opacity: 0.3;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:before,
-  &:after {
-    position: absolute;
-    left: 0.625rem;
-    top: 11.5625rem;
-    content: " ";
-    height: 2.0625rem;
-    width: 0.125rem;
-    background-color: $checkBoxAftBack;
-    margin-left: -1.25rem;
-  }
-
-  &:before {
-    transform: rotate(45deg);
-  }
-
-  &:after {
-    transform: rotate(-45deg);
-  }
-}
 @media screen and (max-width: 690px) {
   .checkboxTask {
     width: 18.125rem;
     margin-left: 0.8125rem;
   }
-
-  .chekboxWrapper .close:before,
-  .chekboxWrapper .close:after {
+  .close {
     margin: 0;
-  }
-  .chekboxWrapper .close1:before,
-  .chekboxWrapper .close1:after {
-    margin: 0;
-  }
-  .chekboxWrapper .close2:before,
-  .chekboxWrapper .close2:after {
-    margin: 0;
+    margin-left: 220px;
+    margin-top: -25px;
   }
 }
 </style>

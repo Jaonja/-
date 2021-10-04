@@ -53,7 +53,7 @@ export default new Vuex.Store({
       return state.todosData.filter((todo) => todo.isChecked).length;
     },
 
-    ckeckBoxs(state) {
+    taskState(state) {
       switch (state.type) {
         case "Active":
           return state.todosData.filter((todo) => !todo.isChecked);
@@ -66,19 +66,16 @@ export default new Vuex.Store({
   },
   mutations: {
     delTask(state, id) {
-      state.todosData = state.todosData.filter((task) => task.id != id);
-      if (state.todosData.length === state.todosData.length) {
-        alert("Задача удалена");
-      }
+      state.todosData = state.todosData.filter((task) => task.id !== id);
     },
     addTsk(state, textTask) {
       state.todosData.push({
         id: state.todosData.length,
-        isChecked: false,
+        isChecked: true,
         textTask: textTask,
       });
       if ((state.todosData.length = state.todosData.length)) {
-        alert("вы добляете " + state.todosData.length + " задачу");
+        alert("вы добавляете " + state.todosData.length + " задачу");
       }
     },
     CheckBoxNext(state, id) {

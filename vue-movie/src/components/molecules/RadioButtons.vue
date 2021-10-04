@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import RadioButton from "@/components/RadioButton.vue";
+import RadioButton from "@/components/molecules/RadioButton.vue";
 
 import { mapGetters } from "vuex";
 export default {
