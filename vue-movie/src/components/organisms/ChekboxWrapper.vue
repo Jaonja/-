@@ -1,11 +1,11 @@
 <template>
   <div :class="$style.checkboxWrapper">
     <ChekboxTask
-      v-for="ckeckBox in taskState"
-      :key="ckeckBox.id"
-      :textTask="ckeckBox.textTask"
-      :isChecked="ckeckBox.isChecked"
-      :id="ckeckBox.id"
+      v-for="Task in taskState"
+      :key="Task.id"
+      :textTask="Task.textTask"
+      :isChecked="Task.isChecked"
+      :id="Task.id"
     />
     <div>
       <input
