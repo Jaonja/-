@@ -10,7 +10,7 @@ export default new Vuex.Store({
       {
         id: 1,
         textTask: "Задача номер 1",
-        isChecked: false,
+        isChecked: true,
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ export default new Vuex.Store({
       {
         id: 1,
         text: "All",
-        isChecked: false,
+        isChecked: true,
       },
       {
         id: 2,
@@ -37,7 +37,7 @@ export default new Vuex.Store({
       {
         id: 3,
         text: "Complete",
-        isChecked: true,
+        isChecked: false,
       },
     ],
     type: "All",
@@ -66,17 +66,14 @@ export default new Vuex.Store({
   },
   mutations: {
     delTask(state, id) {
-      state.todosData = state.todosData.filter((task) => task.id !== id);
+      state.todosData = state.todosData.filter((task) => task.id != id);
     },
     addTsk(state, textTask) {
       state.todosData.push({
-        id: state.todosData.length,
-        isChecked: true,
+        id: state.todosData.length + 2,
         textTask: textTask,
+        isChecked: false,
       });
-      if ((state.todosData.length = state.todosData.length)) {
-        alert("вы добавляете " + state.todosData.length + " задачу");
-      }
     },
     CheckBoxNext(state, id) {
       state.todosData = state.todosData.map((i) =>

@@ -20,7 +20,7 @@ export default {
   props: {
     textTask: String,
     isChecked: Boolean,
-    id: String,
+    id: Number,
   },
   methods: {
     ...mapMutations(["delTask", "addTask", "CheckBoxNext"]),
@@ -92,6 +92,7 @@ label {
   color: $headerh1;
   line-height: 1.75rem;
   margin-left: 1.25rem;
+  z-index: 100;
 }
 
 .checkboxTask {
@@ -110,6 +111,7 @@ label {
   border-radius: 5px;
   position: relative;
   margin-left: 390px;
+  z-index: 0;
   margin-top: -25px;
   border: 1px solid $inputRadio;
   display: flex;
