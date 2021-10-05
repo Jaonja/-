@@ -1,20 +1,29 @@
 <template>
-  <label for="opt1" :class="$style.radio">
+  <label :class="$style.radio">
     <input
       type="radio"
       name="rdo"
-      id="opt1"
       :class="$style.hidden"
       :checked="isChecked"
+      :id="id"
+      @click="change"
     />
     <span :class="$style.label"></span>{{ text }}
   </label>
 </template>
 <script>
+import { mapMutations } from "vuex";
 export default {
   props: {
     text: String,
     isChecked: Boolean,
+    id: Number,
+  },
+  methods: {
+    ...mapMutations(["changeBtn"]),
+    change() {
+      this.changeBtn(this.text);
+    },
   },
 };
 </script>
