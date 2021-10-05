@@ -8,7 +8,6 @@
     />
   </div>
 </template>
-
 <script>
 import RadioButton from "@/components/molecules/RadioButton.vue";
 
@@ -22,7 +21,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" module>
 @import "@/assets/styles.scss";
 
