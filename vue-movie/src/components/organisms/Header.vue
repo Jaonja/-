@@ -1,9 +1,12 @@
 <template>
+
   <div :class="$style.header">
+
     <p>To do List</p>
   </div>
 </template>
 <style lang="scss" module>
+
 @import "@/assets/styles.scss";
 
 .header {

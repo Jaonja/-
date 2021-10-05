@@ -1,4 +1,5 @@
 <template>
+
   <div :class="$style.radioButtons">
     <RadioButton
       v-for="button in buttons"
@@ -6,6 +7,7 @@
       :text="button.text"
       :isChecked="button.isChecked"
     />
+
   </div>
 </template>
 <script>
