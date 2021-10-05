@@ -1,31 +1,42 @@
 <template>
   <div :class="$style.checkboxWrapper">
     <ChekboxTask
-      v-for="ckeckBox in ckeckBoxs"
-      :key="ckeckBox.id"
-      :textTask="ckeckBox.textTask"
-      :isChecked="ckeckBox.isChecked"
+      v-for="Task in taskState"
+      :key="Task.id"
+      :textTask="Task.textTask"
+      :isChecked="Task.isChecked"
+      :id="Task.id"
     />
     <div>
-      <input type="text" placeholder="Add a new task" :class="$style.input" />
+      <input
+        type="text"
+        placeholder="Add a new task"
+        :class="$style.input"
+        v-model="newTsk"
+        v-on:keyup.enter="add"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import ChekboxTask from "@/components/ChekboxTask.vue";
+import ChekboxTask from "@/components/atoms/ChekboxTask.vue";
+import { mapMutations, mapGetters } from "vuex";
+
 export default {
+  computed: {
+    ...mapGetters(["taskState"]),
+  },
   components: {
     ChekboxTask,
   },
-  data() {
-    return {
-      ckeckBoxs: [
-        { textTask: "Task 1", id: 1, isChecked: false },
-        { textTask: "Task 2", id: 2, isChecked: false },
-        { textTask: "Task 3", id: 3, isChecked: false },
-      ],
-    };
+  methods: {
+    ...mapMutations(["addTsk"]),
+
+    add() {
+      this.addTsk(this.newTsk);
+      this.newTsk = "";
+    },
   },
 };
 </script>

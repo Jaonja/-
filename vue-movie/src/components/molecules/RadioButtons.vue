@@ -10,25 +10,19 @@
 
   </div>
 </template>
-
 <script>
-import RadioButton from "@/components/RadioButton.vue";
+import RadioButton from "@/components/molecules/RadioButton.vue";
+
+import { mapGetters } from "vuex";
 export default {
+  computed: {
+    ...mapGetters(["buttons"]),
+  },
   components: {
     RadioButton,
   },
-  data() {
-    return {
-      buttons: [
-        { text: "all", id: 1, isChecked: false },
-        { text: "complited", id: 2, isChecked: false },
-        { text: "active", id: 3, isChecked: false },
-      ],
-    };
-  },
 };
 </script>
-
 <style lang="scss" module>
 @import "@/assets/styles.scss";
 
