@@ -1,4 +1,9 @@
 export default {
+  actions: {
+    storage(context) {
+      context.commit("storage");
+    },
+  },
   state: {
     todosData: [
       {
@@ -61,6 +66,7 @@ export default {
   mutations: {
     delTask(state, id) {
       state.todosData = state.todosData.filter((task) => task.id != id);
+      localStorage.setItem("todosData", JSON.stringify(state.todosData));
     },
     addTsk(state, textTask) {
       state.todosData.push({
@@ -68,17 +74,22 @@ export default {
         textTask: textTask,
         isChecked: false,
       });
+      localStorage.setItem("todosData", JSON.stringify(state.todosData));
     },
     CheckBoxNext(state, id) {
       state.todosData = state.todosData.map((i) =>
         i.id === id ? { ...i, isChecked: !i.isChecked } : i
       );
+      localStorage.setItem("todosData", JSON.stringify(state.todosData));
     },
     changeBtn(state, text) {
       state.type = text;
       state.radioData.map((i) =>
         i.text === text ? { ...i, isChecked: !i.isChecked } : i
       );
+    },
+    storage(state) {
+      state.todosData = JSON.parse(localStorage.getItem("todosData"));
     },
   },
 };

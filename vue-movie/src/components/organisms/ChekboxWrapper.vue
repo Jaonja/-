@@ -27,6 +27,9 @@ export default {
   computed: {
     ...mapGetters(["taskState"]),
   },
+  mounted() {
+    this.$store.dispatch("storage");
+  },
   components: {
     ChekboxTask,
   },
