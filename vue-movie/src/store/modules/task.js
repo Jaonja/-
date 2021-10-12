@@ -7,7 +7,7 @@ export default {
     },
   },
   state: {
-    todosData: new Array(),
+    todosData: [],
     radioData: [
       {
         id: 1,
