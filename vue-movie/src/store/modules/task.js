@@ -7,23 +7,7 @@ export default {
     },
   },
   state: {
-    todosData: [
-      {
-        id: 1,
-        textTask: "Задача номер 1",
-        isChecked: true,
-      },
-      {
-        id: 2,
-        textTask: "Задача номер 2",
-        isChecked: false,
-      },
-      {
-        id: 3,
-        textTask: "Задача номер 3",
-        isChecked: false,
-      },
-    ],
+    todosData: new Array(),
     radioData: [
       {
         id: 1,
@@ -91,7 +75,8 @@ export default {
       );
     },
     storage(state) {
-      state.todosData = JSON.parse(localStorage.getItem("todosData"));
+      state.todosData =
+        JSON.parse(localStorage.getItem("todosData")) || new Array();
     },
   },
 };
