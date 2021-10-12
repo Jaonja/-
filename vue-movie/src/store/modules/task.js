@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export default {
   actions: {
     storage(context) {
@@ -70,7 +72,7 @@ export default {
     },
     addTsk(state, textTask) {
       state.todosData.push({
-        id: state.todosData.length + 2,
+        id: uuidv4(),
         textTask: textTask,
         isChecked: false,
       });
