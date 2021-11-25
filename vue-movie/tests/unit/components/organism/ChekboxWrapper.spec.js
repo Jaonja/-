@@ -7,7 +7,8 @@ localVue.use(Vuex);
 
 describe("ChekboxWrapper", () => {
   let mutations;
-  let getters;
+	let getters;
+	let actions;
   let store;
 
   beforeEach(() => {
@@ -23,8 +24,8 @@ describe("ChekboxWrapper", () => {
     mutations = {
       addTsk: jest.fn(),
     };
-    store = new Vuex.Store({ getters });
-    store = new Vuex.Store({ mutations });
+    store = new Vuex.Store({ getters, mutations, actions,});
+
   });
 
   test("content present", () => {
