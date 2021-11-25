@@ -12,7 +12,7 @@ describe("ChekboxWrapper", () => {
 
   beforeEach(() => {
     getters = {
-      showSortBtn: () => [
+      taskState: () => [
         {
           id: 1,
           text: "All",
