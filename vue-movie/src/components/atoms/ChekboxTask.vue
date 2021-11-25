@@ -23,7 +23,7 @@ export default {
     id: Number,
   },
   methods: {
-    ...mapMutations(["delTask", "addTask", "CheckBoxNext"]),
+    ...mapMutations(["delTask", "CheckBoxNext"]),
 
     del() {
       this.delTask(this.id);
