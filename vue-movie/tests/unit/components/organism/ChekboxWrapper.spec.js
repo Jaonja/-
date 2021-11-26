@@ -7,31 +7,32 @@ localVue.use(Vuex);
 
 describe("ChekboxWrapper", () => {
   let mutations;
-	let getters;
-	let actions;
+  let getters;
+  let actions;
   let store;
 
   beforeEach(() => {
     getters = {
-      taskState: () => [
-        {
-          id: 1,
-          text: "All",
-          isChecked: true,
-        },
-      ],
+      taskState: jest.fn(),
     };
     mutations = {
       addTsk: jest.fn(),
     };
-    store = new Vuex.Store({ getters, mutations, actions,});
-
+    actions = {
+      storage: jest.fn(),
+    };
+    store = new Vuex.Store({ getters, mutations, actions });
   });
 
   test("content present", () => {
     let wrapper = mount(ChekboxWrapper, { store, localVue });
     expect(wrapper.vm).toBeTruthy();
-    expect(wrapper.is(ChekboxWrapper)).toBeTruthy();
+    expect(getters.taskState).toBeTruthy();
+
+  test("storage", () => {
+    const wrapper = mount(ChekboxWrapper, { store, localVue });
+    expect(wrapper.vm).toBeTruthy();
+    expect(actions.storage).toHaveBeenCalled();
   });
 
   describe("new task component - mutations", () => {
