@@ -24,10 +24,11 @@ describe("ChekboxWrapper", () => {
     store = new Vuex.Store({ getters, mutations, actions });
   });
 
-  test("content present", () => {
-    let wrapper = mount(ChekboxWrapper, { store, localVue });
-    expect(wrapper.vm).toBeTruthy();
-    expect(getters.taskState).toBeTruthy();
+	test("content present", () => {
+		let wrapper = mount(ChekboxWrapper, { store, localVue });
+		expect(wrapper.vm).toBeTruthy();
+		expect(getters.taskState).toBeTruthy();
+	})
 
   test("storage", () => {
     const wrapper = mount(ChekboxWrapper, { store, localVue });
