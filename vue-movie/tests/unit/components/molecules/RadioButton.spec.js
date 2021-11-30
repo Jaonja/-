@@ -15,13 +15,13 @@ describe("", () => {
     store = new Vuex.Store({ mutations });
   });
   const wrapper = shallowMount(RadioButton);
-  test("", () => {
+  test("it's a button", () => {
     expect(wrapper.exists()).toBe(true);
   });
-  test("", () => {
+  test("it's a button", () => {
     expect(wrapper.findAll("button")).toBeTruthy();
   });
-  test("", () => {
+  test("sorting", () => {
     let wrapper = mount(RadioButton, { store, localVue });
     let changer = wrapper.find("input[type='radio']");
     changer.trigger("click");

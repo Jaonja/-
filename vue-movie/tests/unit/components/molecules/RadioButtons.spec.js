@@ -12,7 +12,7 @@ describe("buttons", () => {
     };
     store = new Vuex.Store({ getters });
   });
-  test("", () => {
+  test("buttons test", () => {
     let wrapper = mount(RadioButtons, { store, localVue });
     expect(wrapper.vm).toBeTruthy();
     expect(wrapper.is(RadioButtons)).toBeTruthy();
