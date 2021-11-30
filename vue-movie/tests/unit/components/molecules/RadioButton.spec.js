@@ -8,7 +8,6 @@ localVue.use(Vuex);
 describe("", () => {
   let mutations;
   let store;
-
   beforeEach(() => {
     mutations = {
       changeBtn: jest.fn(),

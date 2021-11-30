@@ -9,7 +9,6 @@ localVue.use(Vuex);
 describe("ChekboxTask", () => {
   let mutations;
   let store;
-
   beforeEach(() => {
     mutations = {
       delTask: jest.fn(),
@@ -19,13 +18,11 @@ describe("ChekboxTask", () => {
       mutations,
     });
   });
-
   test("", () => {
     let wrapper = mount(ChekboxTask, { localVue });
     expect(wrapper.vm).toBeTruthy();
     expect(wrapper.is(ChekboxTask)).toBeTruthy();
   });
-
   test("", () => {
     let wrapper = mount(ChekboxTask, { store, localVue });
     wrapper.findAll("div").at(1).trigger("click");
