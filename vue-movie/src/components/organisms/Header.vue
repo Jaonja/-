@@ -3,13 +3,6 @@
     <p>To do List</p>
   </div>
 </template>
-<script>
-
-export default {
-  name: "Header",
-};
-</script>
-
 <style lang="scss" module>
 @import "@/assets/styles.scss";
 
