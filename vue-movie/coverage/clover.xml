@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1637840763592" clover="3.2.0">
+  <project timestamp="1637840763592" name="All files">
+    <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4" elements="19" coveredelements="16" complexity="0" loc="14" ncloc="14" packages="3" files="5" classes="5"/>
+    <package name="atoms">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ChekboxTask.vue" path="C:\Users\igrok\Documents\GitHub\Vue.js\vue-movie\src\components\atoms\ChekboxTask.vue">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="molecules">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="RadioButton.vue" path="C:\Users\igrok\Documents\GitHub\Vue.js\vue-movie\src\components\molecules\RadioButton.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="RadioButtons.vue" path="C:\Users\igrok\Documents\GitHub\Vue.js\vue-movie\src\components\molecules\RadioButtons.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="organisms">
+      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="ChekboxWrapper.vue" path="C:\Users\igrok\Documents\GitHub\Vue.js\vue-movie\src\components\organisms\ChekboxWrapper.vue">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+      </file>
+      <file name="Footer.vue" path="C:\Users\igrok\Documents\GitHub\Vue.js\vue-movie\src\components\organisms\Footer.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
