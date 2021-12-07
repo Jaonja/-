@@ -10,6 +10,7 @@
     <div>
       <input
         type="text"
+				 name="input"
         placeholder="Add a new task"
         :class="$style.input"
         v-model="newTsk"
