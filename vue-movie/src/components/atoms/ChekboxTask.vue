@@ -3,12 +3,13 @@
     <label>
       <input
         type="checkbox"
+				name='rdo'
         :class="$style.optionCheckbox"
         :checked="isChecked"
         @click="next"
       />
       {{ textTask }}
-      <div :class="$style.close" @click="del"></div>
+      <div :class="$style.close" @click="del" name='n1'></div>
     </label>
   </div>
 </template>

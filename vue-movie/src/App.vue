@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper">
+    <div id="wrapper">
       <div class="wrapper-content">
         <div class="todo-wrapper">
           <Header />
